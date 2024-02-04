@@ -121,3 +121,12 @@ span{
     color: var(--Light-Grey);
     font-weight: var(--font-weight-regular);
 }
+@media (max-width: 400px){
+    .container1,.container2{
+        width: 92%;
+        height: auto;
+    }
+    .container1>.submit{
+        width: 100%;
+    }
+    }
