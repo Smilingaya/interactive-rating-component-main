@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root{
+    /*fonts*/
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-family: 'Overpass', sans-serif;
+    /*color*/
+    
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   font-family: var(--font-family);
+}
+body{
+    font-size: 15px;
+    background-color: var(--Very-Dark-Blue);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1,.container2{
+    height: 370px;
+    width: 370px;
+    background-color: hsl(216, 19%, 11%);
+    border-radius: 1.5rem;
+    padding: 2rem 2rem;
+    
+    
+}
+
+.StarImage,.evo{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+   background-color:var(--Dark-Blue) ;
+    display: grid;
+    place-items: center;
+}
+h1{
+    font-weight: var(--font-weight-bold);
+    color: var(--White);
+    margin: 15px auto;
+}
+p{
+    color: var(--Light-Grey);
+    font-weight: var(--font-weight-regular);
+    font-size: 15px;
+    margin: 10px auto;
+}
+.App-evaluation{
+    display: flex;
+    gap: 1rem;
+}
+
+.evo{
+    height: 40px;
+    width: 40px;
+    margin: 15px auto;
+    cursor: pointer;
+  
+}
+.evo:hover{
+    background-color: gray;
+}
+
+.submit{
+    width: 300px;
+    height: 40px;
+    color: var(--White);
+    background-color: var(--Orange);
+    margin: 18px auto;
+    border-radius: 5rem;
+    place-items: center;
+    display: grid;
+    font-weight: var(--font-weight-regular);
+    font-size: 17px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+.container2{
+    display: none;
+    place-items: center;
+    text-align: center;
+
+}
+.select{
+    background-color: var(--Dark-Blue);
+    width: 200px;
+    height: 30px;
+    border-radius: 3rem;
+    color: var(--Orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+span{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.container2 h2{
+    color: var(--White);
+    font-weight: var(--font-weight-bold);
+
+}
+.container2 p{
+    color: var(--Light-Grey);
+    font-weight: var(--font-weight-regular);
+}
